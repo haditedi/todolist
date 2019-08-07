@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/53f092fe-412b-4394-92ae-d4aa3f417ec7/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/todolist-ht",
+    "appService.deploySubpath": ""
+}

@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -8,7 +8,7 @@ const _ = require("lodash");
 
 app.set('view engine', 'ejs');
 
-mongoose.connect("mongodb+srv://admin-hadit:SeaV9ieW71@cluster0-z0o0o.azure.mongodb.net/todolistDB", { useNewUrlParser: true});
+mongoose.connect("mongodb+srv://process.env.MONGOUSER:process.env.MONGOPASS@cluster0-z0o0o.azure.mongodb.net/todolistDB", { useNewUrlParser: true});
 
 
 const itemsSchema = new mongoose.Schema({
